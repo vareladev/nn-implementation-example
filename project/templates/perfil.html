@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Perfil de Cliente</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container profile-container">
+    <div class="profile-row">
+      <div class="profile-col photo-col">
+        <img src="{{ url_for('static', filename='avatars/avatar-1-300x300.png') }}"
+             alt="Foto de {{ nombre }}"
+             class="profile-pic">
+      </div>
+      <div class="profile-col info-col">
+        <h2>
+          Perfil de {{ nombre }}
+          <span class="label label-{{ label_key }}">{{ classification }}</span>
+        </h2>
+        <p><strong>ID Cliente:</strong> {{ cliente_id }}</p>
+        <p><strong>Compras realizadas:</strong> {{ num_compras }}</p>
+        <p><strong>Total gastado:</strong> ${{ "%.2f"|format(total_gastado) }}</p>
+        <p><strong>Días desde la última compra:</strong> {{ dias_ultima }}</p>
+        <p><a href="{{ url_for('listado') }}">← Volver al listado</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

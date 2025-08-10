@@ -1,0 +1,27 @@
+[
+  {
+    "cliente_id": "1",
+    "total": 27.0,
+    "fecha": "2024-11-08"
+  },
+  {
+    "cliente_id": "1",
+    "total": 53.0,
+    "fecha": "2024-11-14"
+  },
+  {
+    "cliente_id": "2",
+    "total": 523.0,
+    "fecha": "2024-12-28"
+  },
+  {
+    "cliente_id": "2",
+    "total": 150.0,
+    "fecha": "2025-01-22"
+  },
+  {
+    "cliente_id": "2",
+    "total": 52.0,
+    "fecha": "2025-01-24"
+  }
+]
